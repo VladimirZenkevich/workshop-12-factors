@@ -1,0 +1,4 @@
+---
+spring:
+  datasource:
+    max-active: 1

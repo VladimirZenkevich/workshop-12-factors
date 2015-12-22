@@ -1,0 +1,2 @@
+cf create-service cleardb spark mysql
+cf bind-service workshop-12f-stock mysql
