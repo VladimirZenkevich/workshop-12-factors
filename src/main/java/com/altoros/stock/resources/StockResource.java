@@ -83,5 +83,13 @@ public class StockResource {
         return stockItemRepository.findAll();
     }
 
+
+    @RequestMapping("/factor7")
+    public String factor7() {
+        return " From ip " + environment.getProperty("CF_INSTANCE_IP")
+                + " and ports " + environment.getProperty("CF_INSTANCE_PORTS");
+    }
+
+
 }
 
