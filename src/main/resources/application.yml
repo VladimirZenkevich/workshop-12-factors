@@ -2,9 +2,9 @@
  spring:
   datasource:
    driverClassName: com.mysql.jdbc.Driver
-   url: ${cloud.services.mysql.connection.jdbcurl:someurl1}
-   username: ${cloud.services.mysql.connection.username:admin}
-   password: ${cloud.services.mysql.connection.password:pass}
+   url: ${cloud.services.mysql.connection.jdbcurl:jdbc:mysql://localhost/workshop_stock}
+   username: ${cloud.services.mysql.connection.username:root}
+   password: ${cloud.services.mysql.connection.password:root}
   jpa:
    hibernate.ddl-auto: none
    show_sql: true
