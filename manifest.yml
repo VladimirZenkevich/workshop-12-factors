@@ -6,3 +6,4 @@ applications:
     memory: 512M
     services:
       - mysql
+      - redis
