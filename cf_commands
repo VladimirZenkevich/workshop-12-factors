@@ -1,2 +1,5 @@
 cf create-service cleardb spark mysql
 cf bind-service workshop-12f-stock mysql
+
+# F8 Concurrency
+cf scale workshop-12f-stock -i 2
