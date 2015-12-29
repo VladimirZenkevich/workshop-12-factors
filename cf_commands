@@ -11,3 +11,9 @@ cf target -s staging
 cf create-service cleardb spark mysql
 cf create-service rediscloud 30mb redis
 cf push -n workshop-12f-stock-staging
+
+#F11 Logs
+cf target -s development
+cf cups logstash-drain -l syslog://URL:5000
+cf bind-service workshop-12f-stock logstash-drain
+cf restart workshop-12f-stock
